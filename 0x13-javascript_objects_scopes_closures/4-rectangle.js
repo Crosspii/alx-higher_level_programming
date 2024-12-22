@@ -1,4 +1,4 @@
-  *0;276;0c#!/usr/bin/node
+#!/usr/bin/node
 
 class Rectangle {
   constructor (w, h) {
@@ -9,7 +9,7 @@ class Rectangle {
     this.width = w;
     this.height = h;
   }
-  
+
   print () {
     for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
@@ -25,3 +25,5 @@ class Rectangle {
     this.height *= 2;
   }
 }
+
+module.exports = Rectangle;
